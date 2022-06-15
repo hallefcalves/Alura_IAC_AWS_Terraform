@@ -19,6 +19,10 @@ resource "aws_instance" "app_server" {
   ami           = "ami-08d4ac5b634553e16"
   instance_type = "t2.micro"
 
+  key_name = "iac-alura"
+
+  
+
   tags = {
     Name = "Example"
   }
